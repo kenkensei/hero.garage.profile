@@ -1,0 +1,39 @@
+h1, h2, h3, .main-font {
+    font-family: 'Estonia', cursive;
+}
+
+.image_1 {
+    position: relative;
+    width: 60%;
+    z-index: 2;
+}
+
+.images {
+   object-fit: cover;
+   width: 100%;
+   height: 200px;
+}
+
+@media screen and (min-width:900px) and ( max-width:1300px) {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+    .back_color {
+        position: absolute;
+        height: 400px;
+        width: 100%;
+        top: 200px;
+        background-color: gold;
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    /*　画面サイズが1024pxからはここを読み込む　*/
+    .back_color {
+        position: absolute;
+        height: 600px;
+        width: 100%;
+        top: 200px;
+        background-color: gold;
+        z-index: 1;
+    }
+}
